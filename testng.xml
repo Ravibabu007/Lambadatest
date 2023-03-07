@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+
+    <test verbose="2" preserve-order="true"
+          name="test1">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="com.selenium101Assignment.TestClassForPlayGround">
+                <methods>
+                    <include name="verifySimpleFormDemo"/>
+                    <include name="verifyDragDrop"/>
+                    <include name="verifyTheNameField"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="test2">
+        <parameter name="browserName" value="edge"></parameter>
+        <classes>
+            <class name="com.selenium101Assignment.TestClassForPlayGround">
+                <methods>
+                    <include name="verifySimpleFormDemo"/>
+                    <include name="verifyDragDrop"/>
+                    <include name="verifyTheNameField"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="test3">
+        <parameter name="browserName" value="firefox"></parameter>
+        <classes>
+            <class name="com.selenium101Assignment.TestClassForPlayGround">
+                <methods>
+                    <include name="verifySimpleFormDemo"/>
+                    <include name="verifyDragDrop"/>
+                    <include name="verifyTheNameField"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="test4">
+        <parameter name="browserName" value="internetExplorer"></parameter>
+        <classes>
+            <class name="com.selenium101Assignment.TestClassForPlayGround">
+                <methods>
+                    <include name="verifySimpleFormDemo"/>
+                    <include name="verifyDragDrop"/>
+                    <include name="verifyTheNameField"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
